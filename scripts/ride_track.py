@@ -1,6 +1,6 @@
 """Writes /Game/Coast/Ride/DA_RideTrack, the playable ride's track, from coast_layout's path.
 
-The rider (OpenCycleUE's ARidePawn) reads the centreline, its sample spacing, whether it loops,
+The rider (VeloverseUE's ARidePawn) reads the centreline, its sample spacing, whether it loops,
 the weather along it and the rain shells from this asset, so the game rides the same road, light
 and rain the stills do. Run after make_coast.py, whenever the path or the weather changes.
 """
@@ -32,9 +32,9 @@ def log(message):
     unreal.log(f"TRACK {message}")
 
 
-track_class = unreal.load_class(None, "/Script/OpenCycleUE.RideTrack")
+track_class = unreal.load_class(None, "/Script/VeloverseUE.RideTrack")
 if track_class is None:
-    raise RuntimeError("no RideTrack class: build the OpenCycleUE module first")
+    raise RuntimeError("no RideTrack class: build the VeloverseUE module first")
 
 path = layout.CoastPath()
 asset_path = f"{FOLDER}/{NAME}"

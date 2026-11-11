@@ -1,11 +1,11 @@
-// Checks RidePhysics.h without the engine: g++ -std=c++20 -I../OpenCycleUE/Source/OpenCycleUE/Public.
+// Checks RidePhysics.h without the engine: g++ -std=c++20 -I../VeloverseUE/Source/VeloverseUE/Public.
 // Run with tests/run.sh.
 #include "RidePhysics.h"
 
 #include <cmath>
 #include <cstdio>
 
-using namespace OpenCycle;
+using namespace Veloverse;
 
 static int Failures = 0;
 

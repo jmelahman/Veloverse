@@ -69,7 +69,7 @@ def mesh(name, path, mat):
 
 
 def track(centre):
-    cls = unreal.load_class(None, "/Script/OpenCycleUE.RideTrack")
+    cls = unreal.load_class(None, "/Script/VeloverseUE.RideTrack")
     factory = unreal.DataAssetFactory()
     factory.set_editor_property("data_asset_class", cls)
     t = lib.fresh("DA_RideTrack", f"{FOLDER}/Ride", cls, factory)

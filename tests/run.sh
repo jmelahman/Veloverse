@@ -6,7 +6,7 @@ out=$(mktemp -d)
 trap 'rm -rf "$out"' EXIT
 for test in "$here"/*_test.cpp; do
 	echo "== $(basename "$test")"
-	${CXX:-g++} -std=c++20 -Wall -Wextra -Werror -I"$here/../OpenCycleUE/Source/OpenCycleUE/Public" \
+	${CXX:-g++} -std=c++20 -Wall -Wextra -Werror -I"$here/../VeloverseUE/Source/VeloverseUE/Public" \
 		"$test" -o "$out/test"
 	"$out/test"
 done

@@ -1,4 +1,4 @@
-# OpenCycle: working notes for Claude
+# Veloverse: working notes for Claude
 
 Read `docs/climb-plan.md` first. It is the plan of record, and its "Where things stand" section
 says what was done last, what is open and what comes next. This file holds the rules and how
@@ -230,7 +230,7 @@ Make each rebuild teach as much as possible, and spend as little waiting time as
 - **Git:**
   - Stay on branch `kanban/opencycle/unreal-cont`.
   - Commit only your own paths (`git add -- <paths> && git commit -m ... -- <paths>`).
-  - Use Conventional Commits with scope `opencycle`, and end with
+  - Use Conventional Commits with scope `veloverse`, and end with
     `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
   - Never push, amend or bypass hooks.
   - `scripts/make_trial_world.py` and `scripts/trial_world.py` are not yours; leave them alone.

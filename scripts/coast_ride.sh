@@ -4,7 +4,7 @@
 # as still_NN.png.
 set -u
 UE=/home/ue4/UnrealEngine/Engine/Binaries/Linux
-PROJECT=/workspace/ue/OpenCycleUE/OpenCycleUE.uproject
+PROJECT=/workspace/ue/VeloverseUE/VeloverseUE.uproject
 export OC_OUT=${OC_OUT:-/workspace/ue/out/coast}
 cd /workspace/ue || exit 1
 # Local machine only: lighter, throttled renders (see local.env).

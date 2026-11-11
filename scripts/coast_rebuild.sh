@@ -11,7 +11,7 @@ fi
 OC_TAIL=40 bash scripts/ue_run.sh make_coast.py make_coast.log | grep -E "COAST (instances|town|paddies|hills|jungle|village|coast|saved|WARN|no mesh)|no material|weather|rain|Error|Traceback"
 OC_TAIL=6 bash scripts/ue_run.sh coast_fixup.py coast_fixup.log | grep -E "FIX|Error"
 # The playable ride's track, once the module that defines it is built.
-if ls OpenCycleUE/Binaries/Linux/libUnrealEditor-OpenCycleUE*.so >/dev/null 2>&1; then
+if ls VeloverseUE/Binaries/Linux/libUnrealEditor-VeloverseUE*.so >/dev/null 2>&1; then
 	OC_TAIL=4 bash scripts/ue_run.sh ride_track.py ride_track.log | grep -E "TRACK|Error"
 fi
 OC_MODE=stills bash scripts/coast_ride.sh 2>&1 | tail -9

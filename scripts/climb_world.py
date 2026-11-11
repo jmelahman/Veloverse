@@ -701,7 +701,7 @@ def track():
         centre = json.load(f)["island"]
     with open(f"{SRC}/info.json") as f:
         ride = json.load(f).get("ride")
-    cls = unreal.load_class(None, "/Script/OpenCycleUE.RideTrack")
+    cls = unreal.load_class(None, "/Script/VeloverseUE.RideTrack")
     factory = unreal.DataAssetFactory()
     factory.set_editor_property("data_asset_class", cls)
     t = lib.fresh("DA_RideTrack", RIDE, cls, factory)

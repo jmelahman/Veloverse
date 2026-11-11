@@ -12,6 +12,6 @@ cd /workspace/ue || exit 1
 sudo -u ue4 env HOME=/home/ue4 UE-LocalDataCachePath=/workspace/ddc XDG_RUNTIME_DIR="$XDG_RUNTIME_DIR" \
 	WAYLAND_DISPLAY="$WAYLAND_DISPLAY" SDL_VIDEO_DRIVER=wayland VK_ICD_FILENAMES="$VK_ICD_FILENAMES" \
 	setsid nohup /home/ue4/UnrealEngine/Engine/Binaries/Linux/UnrealEditor \
-	/workspace/ue/OpenCycleUE/OpenCycleUE.uproject "$MAP" -game -windowed -resx=1280 -resy=720 \
+	/workspace/ue/VeloverseUE/VeloverseUE.uproject "$MAP" -game -windowed -resx=1280 -resy=720 \
 	-log "${WP[@]}" "$@" >play.log 2>&1 </dev/null &
 echo "ride starting; log in /workspace/ue/play.log"

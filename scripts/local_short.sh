@@ -14,7 +14,7 @@ python3 -I scripts/make_paths.py | tail -1
 python3 -I scripts/make_village.py | tail -1
 python3 -I scripts/make_sugi.py | tail -1
 python3 -I scripts/make_houses.py | tail -1
-rm -rf OpenCycleUE/Content/Coast/Terrain OpenCycleUE/Content/Coast/Gen/Paths OpenCycleUE/Content/Coast/Gen/Kit/V_* OpenCycleUE/Content/Coast/Gen/Kit/K_matsu_* OpenCycleUE/Content/Coast/Gen/Kit/K_sugi_* OpenCycleUE/Content/Coast/Gen/Kit/H_*
+rm -rf VeloverseUE/Content/Coast/Terrain VeloverseUE/Content/Coast/Gen/Paths VeloverseUE/Content/Coast/Gen/Kit/V_* VeloverseUE/Content/Coast/Gen/Kit/K_matsu_* VeloverseUE/Content/Coast/Gen/Kit/K_sugi_* VeloverseUE/Content/Coast/Gen/Kit/H_*
 step import
 OC_TAIL=6 bash scripts/ue_run.sh coast_assets.py coast_assets_local.log
 step level

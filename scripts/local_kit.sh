@@ -7,7 +7,7 @@ cd /workspace/ue || exit 1
 export OC_PLAN=short
 step() { echo "== $(date +%H:%M:%S) $*"; }
 step import
-for k in ${KIT:-V_tuft_ K_matsu_}; do rm -rf OpenCycleUE/Content/Coast/Gen/Kit/"${k}"*; done
+for k in ${KIT:-V_tuft_ K_matsu_}; do rm -rf VeloverseUE/Content/Coast/Gen/Kit/"${k}"*; done
 OC_TAIL=6 bash scripts/ue_run.sh coast_assets.py coast_assets_local.log
 step level
 OC_STILLS=${OC_STILLS:-50,300,550,830,930,1010,1090,1300,1700,2050} bash scripts/coast_rebuild.sh

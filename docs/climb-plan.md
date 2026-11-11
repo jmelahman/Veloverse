@@ -1,4 +1,4 @@
-# OpenCycle: the climb plan
+# Veloverse: the climb plan
 
 This is the plan of record, written 2026-11-09 after the user's verdict on the island ("4 FPS, no
 trees, every biome looks awful"). Read it at the start of every session. Update the "Where things
@@ -497,7 +497,7 @@ scanned meshes, Lumen and VSM. Don't build on that level or its look.
     `docs/world-plan.md`); placement by ecology (the numpy generator now, PCG at scale
     later); flowers (white, pink and blue need new scans, which the user fetches, or small
     blade-style meshes from `make_grass.py`); the road surface; then perf.
-- 2026-11-11 (the latest entry): **the golden ride works, and FreeSwift.**
+- 2026-11-11 (the latest entry): **the golden ride works, and Veloverse.**
   - `/Game/World/L_World` is the whole island at 4065² (14 m) with The Ring, 165.5 km, and
     rides end to end offscreen: town, forest, mountain and the wrap past 165.5 km were all
     ridden. See `docs/world-plan.md`, "The golden ride".
@@ -505,7 +505,7 @@ scanned meshes, Lumen and VSM. Don't build on that level or its look.
     `-game` frame grew to 57 GB and the RAM killer took it. None of our landscapes is Nanite,
     so the hero's look shouldn't change; check it on the next hero look.
   - The packaged build now cooks L_World only and starts there.
-  - The source is mirrored to github.com/jmelahman/FreeSwift (`scripts/freeswift_sync.sh`;
+  - The source is mirrored to github.com/jmelahman/Veloverse (`scripts/veloverse_sync.sh`;
     the old Godot LFS files are dropped from its history). `scripts/release.sh TAG` packs
     `out/package` as a release (`--upload` needs `gh auth login`); the notes are
     `docs/release-notes.md`.

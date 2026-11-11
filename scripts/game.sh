@@ -4,9 +4,9 @@
 # OC_UE points somewhere else. Extra arguments pass through, e.g. -RideTrainer=sim -RideFtp=230.
 set -u
 for ue in "${OC_UE:-}" "$HOME/.cache/opencycle-neural/ue" /workspace/ue; do
-	game="$ue/out/package/Linux/OpenCycleUE.sh"
+	game="$ue/out/package/Linux/VeloverseUE.sh"
 	if [ -n "$ue" ] && [ -x "$game" ]; then
-		echo "playing the build of $(date -r "$ue/out/package/Linux/OpenCycleUE/Binaries/Linux/OpenCycleUE" '+%a %d %b %H:%M')"
+		echo "playing the build of $(date -r "$ue/out/package/Linux/VeloverseUE/Binaries/Linux/VeloverseUE" '+%a %d %b %H:%M')"
 		exec "$game" "$@"
 	fi
 done

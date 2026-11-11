@@ -101,7 +101,7 @@ TEXTURE_IDS = [
 TEXTURE_KINDS = ("diff", "nor_dx", "rough", "arm")
 
 
-HEADERS = {"User-Agent": "opencycle-asset-fetch/1.0"}  # Poly Haven refuses urllib's default agent
+HEADERS = {"User-Agent": "veloverse-asset-fetch/1.0"}  # Poly Haven refuses urllib's default agent
 
 
 def get_json(url):

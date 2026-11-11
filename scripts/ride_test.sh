@@ -5,7 +5,7 @@
 # OC_MAP picks the level (default /Game/Coast/L_Coast). OC_TOUR=1 instead tours the menus (ARidePlayerController's -RideTour) and screenshots each.
 set -u
 UE=/home/ue4/UnrealEngine/Engine/Binaries/Linux
-PROJECT=/workspace/ue/OpenCycleUE/OpenCycleUE.uproject
+PROJECT=/workspace/ue/VeloverseUE/VeloverseUE.uproject
 OUT=${OC_OUT:-/workspace/ue/out/ride_test}
 cd /workspace/ue || exit 1
 # shellcheck source=/dev/null

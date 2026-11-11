@@ -17,7 +17,7 @@ if [ "${3:-}" = pull ]; then
 fi
 $ssh_cmd "root@$host" "command -v rsync >/dev/null || (apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq rsync >/dev/null); mkdir -p /workspace/ue /workspace/ddc && chown -R ue4 /workspace/ue /workspace/ddc 2>/dev/null || true"
 rsync -a --no-owner --no-group --copy-unsafe-links --info=stats1 --delete -e "$ssh_cmd" \
-	--exclude 'OpenCycleUE/Intermediate/' --exclude 'OpenCycleUE/Saved/' --exclude 'OpenCycleUE/DerivedDataCache/' \
+	--exclude 'VeloverseUE/Intermediate/' --exclude 'VeloverseUE/Saved/' --exclude 'VeloverseUE/DerivedDataCache/' \
 	--exclude 'out/' --exclude '*.log' --exclude '__pycache__/' \
-	scripts assets_gen textures assets_ph OpenCycleUE "root@$host:/workspace/ue/"
+	scripts assets_gen textures assets_ph VeloverseUE "root@$host:/workspace/ue/"
 $ssh_cmd "root@$host" "chown -R ue4 /workspace/ue 2>/dev/null || true"

@@ -7,9 +7,9 @@
 # Then: python3 scripts/bench_summary.py out/ride_bench/*.csv --skip=600
 set -u
 UE=/home/ue4/UnrealEngine/Engine/Binaries/Linux
-PROJECT=/workspace/ue/OpenCycleUE/OpenCycleUE.uproject
+PROJECT=/workspace/ue/VeloverseUE/VeloverseUE.uproject
 OUT=/workspace/ue/out/ride_bench
-SAVED=/workspace/ue/OpenCycleUE/Saved/Profiling/CSV
+SAVED=/workspace/ue/VeloverseUE/Saved/Profiling/CSV
 mkdir -p "$OUT" && chmod a+rwx "$OUT"
 for preset in ${OC_PRESETS:-0 1 2 3}; do
 	for start in ${OC_STARTS:-1200 6000 12000 18000}; do

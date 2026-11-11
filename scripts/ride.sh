@@ -3,7 +3,7 @@
 # Runs on the pod as root; Unreal itself runs as ue4. Settings pass through to make_ride.py.
 set -u
 UE=/home/ue4/UnrealEngine/Engine/Binaries/Linux
-PROJECT=/workspace/ue/OpenCycleUE/OpenCycleUE.uproject
+PROJECT=/workspace/ue/VeloverseUE/VeloverseUE.uproject
 export OC_OUT=${OC_OUT:-/workspace/ue/out/ride}
 LEVEL=${OC_LEVEL:-/PCGBiomeSample/Maps/BiomeSampleLevel}
 EXEC=()

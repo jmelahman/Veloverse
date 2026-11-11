@@ -5,7 +5,7 @@
 #include <cmath>
 #include <cstdio>
 
-using namespace OpenCycle::Ble;
+using namespace Veloverse::Ble;
 
 static int Failures = 0;
 

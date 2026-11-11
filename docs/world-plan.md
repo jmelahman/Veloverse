@@ -1,4 +1,4 @@
-# OpenCycle: the world plan and the biome foundation
+# Veloverse: the world plan and the biome foundation
 
 Written 10 Nov for whoever continues (the user plans to hand this to Opus). Read `CLAUDE.md`
 first for the loop, the crash rules and the vegetation rules; this file is the map of what

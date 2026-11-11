@@ -18,7 +18,7 @@ rm -f assets_gen/paths/P_*
 python3 -I scripts/make_paths.py | tail -1
 mkdir -p out && python3 -I scripts/plan_page.py
 # Stale tiles and chunks from the short ride would still be spawned by name: clear them first.
-rm -rf OpenCycleUE/Content/Coast/Terrain OpenCycleUE/Content/Coast/Gen/Paths
+rm -rf VeloverseUE/Content/Coast/Terrain VeloverseUE/Content/Coast/Gen/Paths
 step import
 OC_STAGE=terrain,sea OC_TAIL=4 bash scripts/ue_run.sh coast_assets.py coast_assets_long.log
 step level

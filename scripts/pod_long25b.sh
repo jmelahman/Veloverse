@@ -11,7 +11,7 @@ step kit
 python3 -I scripts/make_village.py | tail -1
 python3 -I scripts/make_sugi.py | tail -1
 python3 -I scripts/make_houses.py | tail -1
-rm -rf OpenCycleUE/Content/Coast/Gen/Kit/V_tuft_* OpenCycleUE/Content/Coast/Gen/Kit/K_matsu_* OpenCycleUE/Content/Coast/Gen/Kit/H_*
+rm -rf VeloverseUE/Content/Coast/Gen/Kit/V_tuft_* VeloverseUE/Content/Coast/Gen/Kit/K_matsu_* VeloverseUE/Content/Coast/Gen/Kit/H_*
 step level
 OC_OUT=/workspace/ue/out/loop25_v2 OC_RETEX=1 \
 	OC_STILLS=$(seq -s, 50 1500 24000) bash scripts/coast_rebuild.sh

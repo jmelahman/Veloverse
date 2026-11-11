@@ -17,7 +17,7 @@ rm -f job.done
 		OC_VOXEL_OPACITY="${OC_VOXEL_OPACITY:-}" OC_LEAF_UV_SCALE="${OC_LEAF_UV_SCALE:-}" \
 		OC_LEAF_TINT="${OC_LEAF_TINT:-}" OC_SUN="${OC_SUN:-}" OC_SUN_LUX="${OC_SUN_LUX:-}" \
 		OC_SUN_SOFT="${OC_SUN_SOFT:-}" OC_SKY_LIGHT="${OC_SKY_LIGHT:-}" OC_LEAF_REBUILD="${OC_LEAF_REBUILD:-}" \
-		/home/ue4/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Cmd /workspace/ue/OpenCycleUE/OpenCycleUE.uproject \
+		/home/ue4/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Cmd /workspace/ue/VeloverseUE/VeloverseUE.uproject \
 		-run=pythonscript -script=/workspace/ue/scripts/make_forest.py -unattended -nosplash -stdout -FullStdOutLogOutput \
 		>make_forest.log 2>&1 </dev/null
 	grep -E "FOREST|Error" make_forest.log | grep -v Deprecation | cut -c30- | head

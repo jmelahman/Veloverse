@@ -424,7 +424,7 @@ def track(name, centre, others=()):
     """A route as a ride track in {FOLDER}/Ride: the island loop as DA_RideTrack, which the level
     rides by default and which lists the others, each as DA_Route_<name>."""
     title, blurb = ROUTES.get(name, (name.title(), ""))
-    cls = unreal.load_class(None, "/Script/OpenCycleUE.RideTrack")
+    cls = unreal.load_class(None, "/Script/VeloverseUE.RideTrack")
     factory = unreal.DataAssetFactory()
     factory.set_editor_property("data_asset_class", cls)
     asset = "DA_RideTrack" if name == "island" else f"DA_Route_{name}"

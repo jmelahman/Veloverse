@@ -3,7 +3,7 @@
 # Usage: scripts/ue_run.sh SCRIPT.py LOG
 set -u
 UE=/home/ue4/UnrealEngine/Engine/Binaries/Linux
-PROJECT=/workspace/ue/OpenCycleUE/OpenCycleUE.uproject
+PROJECT=/workspace/ue/VeloverseUE/VeloverseUE.uproject
 vars=()
 while IFS='=' read -r name _; do vars+=("$name=${!name}"); done < <(env | grep '^OC_')
 # OC_EDITOR=1 runs the script in the whole editor, rendering offscreen, rather than the commandlet:

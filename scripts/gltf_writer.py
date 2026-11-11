@@ -148,7 +148,7 @@ class Mesh:
             )
 
         doc = {
-            "asset": {"version": "2.0", "generator": "opencycle gltf_writer"},
+            "asset": {"version": "2.0", "generator": "veloverse gltf_writer"},
             "scene": 0,
             "scenes": [{"nodes": [0]}],
             "nodes": [{"mesh": 0, "name": "mesh"}],

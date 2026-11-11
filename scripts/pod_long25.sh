@@ -9,7 +9,7 @@ step() { echo "== $(date +%H:%M:%S) $*"; }
 step swap
 rm -rf assets_gen/terrain assets_gen/paths
 cp -r gen25/terrain gen25/paths assets_gen/
-rm -rf OpenCycleUE/Content/Coast/Terrain OpenCycleUE/Content/Coast/Gen/Paths
+rm -rf VeloverseUE/Content/Coast/Terrain VeloverseUE/Content/Coast/Gen/Paths
 step import
 OC_STAGE=terrain,sea OC_TAIL=4 bash scripts/ue_run.sh coast_assets.py coast_assets_long.log
 step level
